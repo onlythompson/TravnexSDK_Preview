@@ -23,7 +23,7 @@
 		6CEEBCA12CDD1B680083394B /* Exceptions for "TravnexSDK" folder in "TravnexSDK" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
-				TravnexSDK.h,
+				Public/TravnexSDK.h,
 			);
 			target = 6CEEBC992CDD1B680083394B /* TravnexSDK */;
 		};

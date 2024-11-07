@@ -21,12 +21,13 @@ let package = Package(
     targets: [
         .target(
             name: "TravnexSDK",
-            dependencies: ["AgoraRtcEngine_iOS"]),
-        .binaryTarget(
-            name: "TravnexSDK",
-            dependencies: ["AgoraRtcEngine_iOS"]
-            path: "TravnexSDK.xcframework"
-            ),
+            dependencies: [
+                .product(name: "AgoraRtcEngine_iOS", package:"AgoraRtcEngine_iOS")
+            ],
+            exclude:["Info.plist"],
+            path: "TravnexSDK",
+            sources: ["Internal", "Public"],
+            publicHeadersPath: "Public"),
         ],
     swiftLanguageVersions: [.v5]
     )

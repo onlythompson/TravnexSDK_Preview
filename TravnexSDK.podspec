@@ -1,5 +1,3 @@
-# use framework!
-use frameworks :linkage =>static
 
 Pod::Spec.new do |spec|
 
@@ -23,12 +21,14 @@ Pod::Spec.new do |spec|
   spec.vendor_frameworks = "TravnexSDK.xcframework"
 
 
-  spec.source_files  = "Classes", "Sources/**/*.{h,m,swift}"
+  spec.source_files  = "TravnexSDK/**/*.{h,m,swift}"
+  spec.public_header_files = "TravnexSDK/Public/*.h"
  
-  spec.resources = "Sources/**/*.{png,xib,storyboard,xcassets,strings}"
+  spec.resources = { "TravnexSDK" => ["TravnexSDK/**/*.{png,xib,storyboard,xcassets,strings}"] }
 
   spec.framework = "UIKit"
   spec.requires_arc = true
   spec.dependency "AgoraRtcEngine_iOS", "~> 4.4"
+  spec.static_framework = true
 
 end

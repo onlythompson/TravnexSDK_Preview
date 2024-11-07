@@ -16,16 +16,16 @@ let package = Package(
             targets: ["TravnexSDK"]),
     ],
     dependecies:[
-        .package(url:"https://github.com/AgoraIO/AgoraRtcEngine_iOS", from: "4.4.0"),
+        .package(url:"https://github.com/AgoraIO/AgoraRtcEngine_iOS", .upToNextMajor(from: "4.4.0")),
     ],
     targets: [
         .target(
             name: "TravnexSDK",
             dependencies: [
-                .product(name: "AgoraRtcEngine_iOS", package:"AgoraRtcEngine_iOS")
+                .product(name: "RtcBasic", package:"AgoraRtcEngine_iOS")
             ],
-            exclude:["Info.plist"],
             path: "TravnexSDK",
+            exclude:["Info.plist"],
             sources: ["Internal", "Public"],
             publicHeadersPath: "Public"),
         ],

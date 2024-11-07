@@ -29,6 +29,7 @@ target 'YourApp' do
   
   pod 'TravnexSDK'
 end
+```
 
 ## Required Permissions and Privacy
 

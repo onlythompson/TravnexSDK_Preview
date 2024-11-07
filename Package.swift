@@ -9,13 +9,13 @@ import PackageDescription
 
 let package = Package(
     name: "TravnexSDK",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(
             name: "TravnexSDK",
             targets: ["TravnexSDK"]),
     ],
-    dependecies:[
+    dependencies:[
         .package(url:"https://github.com/AgoraIO/AgoraRtcEngine_iOS", .upToNextMajor(from: "4.4.0")),
     ],
     targets: [
@@ -25,9 +25,9 @@ let package = Package(
                 .product(name: "RtcBasic", package:"AgoraRtcEngine_iOS")
             ],
             path: "TravnexSDK",
-            exclude:["Info.plist"],
+//            exclude:["Info.plist"],
             sources: ["Internal", "Public"],
-            publicHeadersPath: "Public"),
+            publicHeadersPath: "Public")
         ],
     swiftLanguageVersions: [.v5]
     )

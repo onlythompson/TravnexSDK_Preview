@@ -83,7 +83,7 @@ public class TravnexButton: UIButton {
         
         tintColor = .white
         imageView?.contentMode = .scaleAspectFit
-        imageEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+//        imageEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
     }
     
     private func setupTouchAnimation() {

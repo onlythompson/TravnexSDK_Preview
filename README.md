@@ -19,9 +19,16 @@ Add TravnexSDK to your project through Xcode:
 
 ### CocoaPods
 
+Add this to your Podfile:
+
 ```ruby
-pod 'TravnexSDK'
-```
+target 'YourApp' do
+  use_frameworks!
+  
+  use_frameworks! :linkage => :static
+  
+  pod 'TravnexSDK'
+end
 
 ## Required Permissions and Privacy
 

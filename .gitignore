@@ -81,5 +81,5 @@ playground.xcworkspace
 # Logs
 ##
 *.log
-
+*.sh
 

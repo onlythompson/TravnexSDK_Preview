@@ -21,8 +21,8 @@ import CoreLocation
 import ObjectiveC
 
 
-public class TravnexSDK {
-    public static let shared = TravnexSDK()
+public class Travnex {
+    public static let shared = Travnex()
     
     public struct Configuration {
         let t_config: TravnexConfig

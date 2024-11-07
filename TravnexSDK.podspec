@@ -1,6 +1,5 @@
-
-platform :ios, '13.0'
-use framework!
+# use framework!
+use frameworks :linkage =>static
 
 Pod::Spec.new do |spec|
 
@@ -20,6 +19,8 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
 
   spec.source       = { :git => "https://github.com/trav-nex/TravnexSDK_Preview.git", :tag => "#{spec.version}" }
+  spec.platform :ios, '13.0'
+  spec.vendor_frameworks = "TravnexSDK.xcframework"
 
 
   spec.source_files  = "Classes", "Sources/**/*.{h,m,swift}"

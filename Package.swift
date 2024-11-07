@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "TravnexSDK",
             dependencies: [
-                .product(name: "RtcBasic", package:"AgoraRtcEngine_iOS")
+                .product(name: "AgoraRtcKit", package:"AgoraRtcEngine_iOS")
             ],
             path: "TravnexSDK",
 //            exclude:["Info.plist"],

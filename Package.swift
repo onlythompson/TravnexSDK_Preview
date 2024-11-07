@@ -16,7 +16,7 @@ let package = Package(
             targets: ["TravnexSDK"]),
     ],
     dependencies:[
-        .package(url:"https://github.com/AgoraIO/AgoraRtcEngine_iOS", .upToNextMajor(from: "4.4.0")),
+        .package(url:"https://github.com/AgoraIO/AgoraRtcEngine_iOS.git", .upToNextMajor(from: "4.4.0")),
     ],
     targets: [
         .target(
